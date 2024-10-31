@@ -286,3 +286,22 @@ function restrict_account_page_access() {
     }
 }
 add_action('template_redirect', 'restrict_account_page_access');
+
+
+function add_custom_user_export_columns($columns) {
+    // Add the custom field to the columns
+    $columns['total_investment'] = 'Total Investment';
+    return $columns;
+}
+add_filter('export_user_column_headers', 'add_custom_user_export_columns');
+
+function add_custom_user_export_data($user, $fields) {
+    // Get the total_investment custom field value
+    $total_investment = get_user_meta($user->ID, 'total_investment', true);
+    
+    // Add the custom field value to the exported data
+    $fields['total_investment'] = $total_investment;
+    
+    return $fields;
+}
+add_filter('export_user_data', 'add_custom_user_export_data', 10, 2);
