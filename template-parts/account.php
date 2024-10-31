@@ -861,8 +861,8 @@ $user_id = get_current_user_id();
                             <div class="px-20 py-16 shadow-none radius-8 h-100 gradient-deep-2 left-line line-bg-lilac position-relative overflow-hidden">
                                 <div class="d-flex flex-wrap align-items-center justify-content-between gap-1 mb-8">
                                     <div>
-                                        <span class="mb-2 fw-medium text-secondary-light text-md">Total Purchase</span>
-                                        <h6 class="fw-semibold mb-1">$35,000</h6>
+                                        <span class="mb-2 fw-medium text-secondary-light text-md">Amount Earned</span>
+                                        <h6 class="fw-semibold mb-1">£35,000</h6>
                                     </div>
                                     <span class="w-44-px h-44-px radius-8 d-inline-flex justify-content-center align-items-center text-2xl mb-12 bg-lilac-200 text-lilac-600">
                                         <i class="ri-handbag-fill"></i>
@@ -925,7 +925,7 @@ $user_id = get_current_user_id();
             <div class="card h-100">
                 <div class="card-body p-24 mb-8">
                     <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
-                        <h6 class="mb-2 fw-bold text-lg mb-0">Income Vs Expense </h6>
+                        <h6 class="mb-2 fw-bold text-lg mb-0">Income Statistics </h6>
                         <select class="form-select form-select-sm w-auto bg-base border text-secondary-light">
                             <option>Yearly</option>
                             <option>Monthly</option>
@@ -969,7 +969,7 @@ $user_id = get_current_user_id();
             <div class="card">
                 <div class="card-header border-bottom">
                     <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
-                        <h6 class="mb-2 fw-bold text-lg mb-0">Users</h6>
+                        <h6 class="mb-2 fw-bold text-lg mb-0">Newsfeed</h6>
                         <a href="javascript:void(0)" class="text-primary-600 hover-text-primary d-flex align-items-center gap-1">
                             View All
                             <iconify-icon icon="solar:alt-arrow-right-linear" class="icon"></iconify-icon>
@@ -1200,6 +1200,7 @@ $user_id = get_current_user_id();
   <div class="row align-items-center justify-content-between">
     <div class="col-auto">
       <p class="mb-0">© 2024 WowDash. All Rights Reserved.</p>
+      <?php var_dump('test')?>
     </div>
     <div class="col-auto">
       <p class="mb-0">Made by <span class="text-primary-600">wowtheme7</span></p>
@@ -1235,15 +1236,47 @@ $user_id = get_current_user_id();
   
   <!-- main js -->
   <script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/app.js"></script>
-
 <script>
+    
     // ===================== Income VS Expense Start =============================== 
     function createChartTwo(chartId, color1, color2) {
+        // Sample data fetched from PHP
+        var rawData = [
+            <?php echo get_field('oct_24', 'user_' . $user_id);?>,
+            <?php echo get_field('nov_24', 'user_' . $user_id);?>,
+            <?php echo get_field('dec_24', 'user_' . $user_id);?>,
+            // <?php echo get_field('jan_25', 'user_' . $user_id);?>,
+            // <?php echo get_field('feb_25', 'user_' . $user_id);?>,
+            // <?php echo get_field('mar_25', 'user_' . $user_id);?>,
+            // <?php echo get_field('apr_25', 'user_' . $user_id);?>,
+            // <?php echo get_field('may_25', 'user_' . $user_id);?>,
+            // <?php echo get_field('jun_25', 'user_' . $user_id);?>,
+            // <?php echo get_field('jul_25', 'user_' . $user_id);?>,
+            // <?php echo get_field('aug_25', 'user_' . $user_id);?>,
+            // <?php echo get_field('sep_25', 'user_' . $user_id);?>,
+            // <?php echo get_field('oct_25', 'user_' . $user_id);?>,
+
+        ];
+
+        // Function to replace 0 or null with the last valid number
+       function processData(data) {
+            let lastValid = null;
+            return data.map(value => {
+                // Check if the value is 0, null, undefined, or does not exist
+                if (value === 0 || value === null || value === undefined) {
+                    return lastValid !== null ? lastValid : 0; // Use the last valid number or 0 if none exists
+                }
+                lastValid = value; // Update the last valid number
+                return value; // Return the current value
+            });
+        }
+
+        var processedData = processData(rawData);
+
         var options = {
             series: [{
                 name: 'series1',
-                data: [<?php echo get_field('oct_24', 'user_' . $user_id);?>
-                , 35, 50, 32, 48, 40, 55, 50, 60]
+                data: processedData
             }],
             legend: {
                 show: false 
@@ -1303,30 +1336,20 @@ $user_id = get_current_user_id();
             },
             fill: {
                 type: 'gradient',
-                colors: [color1, color2], // Use two colors for the gradient
-                // gradient: {
-                //     shade: 'light',
-                //     type: 'vertical',
-                //     shadeIntensity: 0.5,
-                //     gradientToColors: [`${color1}`, `${color2}00`], // Bottom gradient colors with transparency
-                //     inverseColors: false,
-                //     opacityFrom: .6,
-                //     opacityTo: 0.3,
-                //     stops: [0, 100],
-                // },
+                colors: [color1, color2],
                 gradient: {
                     shade: 'light',
                     type: 'vertical',
                     shadeIntensity: 0.5,
-                    gradientToColors: [undefined, `${color2}00`], // Apply transparency to both colors
+                    gradientToColors: [undefined, `${color2}00`],
                     inverseColors: false,
-                    opacityFrom: [0.4, 0.6], // Starting opacity for both colors
-                    opacityTo: [0.3, 0.3], // Ending opacity for both colors
+                    opacityFrom: [0.4, 0.6],
+                    opacityTo: [0.3, 0.3],
                     stops: [0, 100],
                 },
             },
             markers: {
-                colors: [color1, color2], // Use two colors for the markers
+                colors: [color1, color2],
                 strokeWidth: 3,
                 size: 0,
                 hover: {
@@ -1337,7 +1360,7 @@ $user_id = get_current_user_id();
                 labels: {
                     show: false
                 },
-                categories: ['Oct24', 'Nov24', 'Dec24', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                categories: ['Oct24', 'Nov24', 'Dec24', 'Jan25', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
                 tooltip: {
                     enabled: false
                 },
@@ -1353,10 +1376,10 @@ $user_id = get_current_user_id();
             yaxis: {
                 labels: {
                     formatter: function (value) {
-                    return "$" + value + "k";
+                        return "$" + value + "k";
                     },
                     style: {
-                    fontSize: "14px"
+                        fontSize: "14px"
                     }
                 },
             },
