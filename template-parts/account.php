@@ -59,390 +59,20 @@ $user_id = get_current_user_id();
   </div>
   <div class="sidebar-menu-area">
     <ul class="sidebar-menu" id="sidebar-menu">
-      <li class="dropdown">
-        <a href="javascript:void(0)">
-          <iconify-icon icon="solar:home-smile-angle-outline" class="menu-icon"></iconify-icon>
-          <span>Dashboard</span>
-        </a>
-        <ul class="sidebar-submenu">
-          <li>
-            <a href="index.html"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> AI</a>
-          </li>
-          <li>
-            <a href="index-2.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> CRM</a>
-          </li>
-          <li>
-            <a href="index-3.html"><i class="ri-circle-fill circle-icon text-info-main w-auto"></i> eCommerce</a>
-          </li>
-          <li>
-            <a href="index-4.html"><i class="ri-circle-fill circle-icon text-danger-main w-auto"></i> Cryptocurrency</a>
-          </li>
-          <li>
-            <a href="index-5.html"><i class="ri-circle-fill circle-icon text-success-main w-auto"></i> Investment</a>
-          </li>
-          <li>
-            <a href="index-6.html"><i class="ri-circle-fill circle-icon text-purple w-auto"></i> LMS</a>
-          </li>
-          <li>
-            <a href="index-7.html"><i class="ri-circle-fill circle-icon text-info-main w-auto"></i> NFT & Gaming</a>
-          </li>
-          <li>
-            <a href="index-8.html"><i class="ri-circle-fill circle-icon text-danger-main w-auto"></i> Medical</a>
-          </li>
-          <li>
-            <a href="index-9.html"><i class="ri-circle-fill circle-icon text-purple w-auto"></i> Analytics</a>
-          </li>
-          <li>
-            <a href="index-10.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> POS & Inventory </a>
-          </li>
-        </ul>
-      </li>
-      <li class="sidebar-menu-group-title">Application</li>
+      <li class="sidebar-menu-group-title">MAIN MENU</li>
       <li>
-        <a href="email.html">
+        <a href="/account/">
           <iconify-icon icon="mage:email" class="menu-icon"></iconify-icon>
-          <span>Email</span>
+          <span>Overview</span>
         </a>
       </li>
       <li>
-        <a href="chat-message.html">
+        <a href="/messages/">
           <iconify-icon icon="bi:chat-dots" class="menu-icon"></iconify-icon>
           <span>Chat</span> 
         </a>
       </li>
-      <li>
-        <a href="calendar-main.html">
-          <iconify-icon icon="solar:calendar-outline" class="menu-icon"></iconify-icon>
-          <span>Calendar</span> 
-        </a>
-      </li>
-      <li>
-        <a href="kanban.html">
-          <iconify-icon icon="material-symbols:map-outline" class="menu-icon"></iconify-icon>
-          <span>Kanban</span> 
-        </a>
-      </li>
-      <li class="dropdown">
-        <a href="javascript:void(0)">
-          <iconify-icon icon="hugeicons:invoice-03" class="menu-icon"></iconify-icon>
-          <span>Invoice</span> 
-        </a>
-        <ul class="sidebar-submenu">
-          <li>
-            <a href="invoice-list.html"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> List</a>
-          </li>
-          <li>
-            <a href="invoice-preview.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Preview</a>
-          </li>
-          <li>
-            <a href="invoice-add.html"><i class="ri-circle-fill circle-icon text-info-main w-auto"></i> Add new</a>
-          </li>
-          <li>
-            <a href="invoice-edit.html"><i class="ri-circle-fill circle-icon text-danger-main w-auto"></i> Edit</a>
-          </li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="javascript:void(0)">
-          <i class="ri-robot-2-line"></i>
-          <span>Ai Application</span> 
-        </a>
-        <ul class="sidebar-submenu">
-          <li>
-            <a href="text-generator.html"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Text Generator</a>
-          </li>
-          <li>
-            <a href="code-generator.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Code Generator</a>
-          </li>
-          <li>
-            <a href="image-generator.html"><i class="ri-circle-fill circle-icon text-info-main w-auto"></i> Image Generator</a>
-          </li>
-          <li>
-            <a href="voice-generator.html"><i class="ri-circle-fill circle-icon text-danger-main w-auto"></i> Voice Generator</a>
-          </li>
-          <li>
-            <a href="video-generator.html"><i class="ri-circle-fill circle-icon text-success-main w-auto"></i> Video Generator</a>
-          </li>
-        </ul>
-      </li>
-
-      <li class="dropdown">
-        <a href="javascript:void(0)">
-          <i class="ri-btc-line"></i>
-          <span>Crypto Currency</span> 
-        </a>
-        <ul class="sidebar-submenu">
-          <li>
-            <a href="wallet.html"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Wallet</a>
-          </li>
-          <li>
-            <a href="marketplace.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Marketplace</a>
-          </li>
-          <li>
-            <a href="marketplace-details.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Marketplace Details</a>
-          </li>
-          <li>
-            <a href="portfolio.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Portfolios</a>
-          </li>
-        </ul>
-      </li>
-
-      <li class="sidebar-menu-group-title">UI Elements</li> 
-
-      <li class="dropdown">
-        <a href="javascript:void(0)">
-          <iconify-icon icon="solar:document-text-outline" class="menu-icon"></iconify-icon>
-          <span>Components</span> 
-        </a>
-        <ul class="sidebar-submenu">
-          <li>
-            <a href="typography.html"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Typography</a>
-          </li>
-          <li>
-            <a href="colors.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Colors</a>
-          </li>
-          <li>
-            <a href="button.html"><i class="ri-circle-fill circle-icon text-success-main w-auto"></i> Button</a>
-          </li>
-          <li>
-            <a href="dropdown.html"><i class="ri-circle-fill circle-icon text-lilac-600 w-auto"></i> Dropdown</a>
-          </li>
-          <li>
-            <a href="alert.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Alerts</a>
-          </li>
-          <li>
-            <a href="card.html"><i class="ri-circle-fill circle-icon text-danger-main w-auto"></i> Card</a>
-          </li>
-          <li>
-            <a href="carousel.html"><i class="ri-circle-fill circle-icon text-info-main w-auto"></i> Carousel</a>
-          </li>
-          <li>
-            <a href="avatar.html"><i class="ri-circle-fill circle-icon text-success-main w-auto"></i> Avatars</a>
-          </li>
-          <li>
-            <a href="progress.html"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Progress bar</a>
-          </li>
-          <li>
-            <a href="tabs.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Tab & Accordion</a>
-          </li>
-          <li>
-            <a href="pagination.html"><i class="ri-circle-fill circle-icon text-danger-main w-auto"></i> Pagination</a>
-          </li>
-          <li>
-            <a href="badges.html"><i class="ri-circle-fill circle-icon text-info-main w-auto"></i> Badges</a>
-          </li>
-          <li>
-            <a href="tooltip.html"><i class="ri-circle-fill circle-icon text-lilac-600 w-auto"></i> Tooltip & Popover</a>
-          </li>
-          <li>
-            <a href="videos.html"><i class="ri-circle-fill circle-icon text-cyan w-auto"></i> Videos</a>
-          </li>
-          <li>
-            <a href="star-rating.html"><i class="ri-circle-fill circle-icon text-indigo w-auto"></i> Star Ratings</a>
-          </li>
-          <li>
-            <a href="tags.html"><i class="ri-circle-fill circle-icon text-purple w-auto"></i> Tags</a>
-          </li>
-          <li>
-            <a href="list.html"><i class="ri-circle-fill circle-icon text-red w-auto"></i> List</a>
-          </li>
-          <li>
-            <a href="calendar.html"><i class="ri-circle-fill circle-icon text-yellow w-auto"></i> Calendar</a>
-          </li>
-          <li>
-            <a href="radio.html"><i class="ri-circle-fill circle-icon text-orange w-auto"></i> Radio</a>
-          </li>
-          <li>
-            <a href="switch.html"><i class="ri-circle-fill circle-icon text-pink w-auto"></i> Switch</a>
-          </li>
-          <li>
-            <a href="image-upload.html"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Upload</a>
-          </li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="javascript:void(0)">
-          <iconify-icon icon="heroicons:document" class="menu-icon"></iconify-icon>
-          <span>Forms</span> 
-        </a>
-        <ul class="sidebar-submenu">
-          <li>
-            <a href="form.html"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Input Forms</a>
-          </li>
-          <li>
-            <a href="form-layout.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Input Layout</a>
-          </li>
-          <li>
-            <a href="form-validation.html"><i class="ri-circle-fill circle-icon text-success-main w-auto"></i> Form Validation</a>
-          </li>
-          <li>
-            <a href="wizard.html"><i class="ri-circle-fill circle-icon text-danger-main w-auto"></i> Form Wizard</a>
-          </li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="javascript:void(0)">
-          <iconify-icon icon="mingcute:storage-line" class="menu-icon"></iconify-icon>
-          <span>Table</span> 
-        </a>
-        <ul class="sidebar-submenu">
-          <li>
-            <a href="table-basic.html"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Basic Table</a>
-          </li>
-          <li>
-            <a href="table-data.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Data Table</a>
-          </li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="javascript:void(0)">
-          <iconify-icon icon="solar:pie-chart-outline" class="menu-icon"></iconify-icon>
-          <span>Chart</span> 
-        </a>
-        <ul class="sidebar-submenu">
-          <li>
-            <a href="line-chart.html"><i class="ri-circle-fill circle-icon text-danger-main w-auto"></i> Line Chart</a>
-          </li>
-          <li>
-            <a href="column-chart.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Column Chart</a>
-          </li>
-          <li>
-            <a href="pie-chart.html"><i class="ri-circle-fill circle-icon text-success-main w-auto"></i> Pie Chart</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="widgets.html">
-          <iconify-icon icon="fe:vector" class="menu-icon"></iconify-icon>
-          <span>Widgets</span> 
-        </a>
-      </li>
-      <li class="dropdown">
-        <a href="javascript:void(0)">
-          <iconify-icon icon="flowbite:users-group-outline" class="menu-icon"></iconify-icon>
-          <span>Users</span> 
-        </a>
-        <ul class="sidebar-submenu">
-          <li>
-            <a href="users-list.html"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Users List</a>
-          </li>
-          <li>
-            <a href="users-grid.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Users Grid</a>
-          </li>
-          <li>
-            <a href="add-user.html"><i class="ri-circle-fill circle-icon text-info-main w-auto"></i> Add User</a>
-          </li>
-          <li>
-            <a href="view-profile.html"><i class="ri-circle-fill circle-icon text-danger-main w-auto"></i> View Profile</a>
-          </li>
-        </ul>
-      </li>
-
-      <li class="dropdown">
-        <a href="javascript:void(0)">
-          <i class="ri-user-settings-line text-xl me-10"></i>
-          <span>Role & Access</span> 
-        </a>
-        <ul class="sidebar-submenu">
-          <li>
-            <a href="role-access.html"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Role & Access</a>
-          </li>
-          <li>
-            <a href="assign-role.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Assign Role</a>
-          </li>
-        </ul>
-      </li>
-
-      <li class="sidebar-menu-group-title">Application</li>
-
-      <li class="dropdown">
-        <a href="javascript:void(0)">
-          <iconify-icon icon="simple-line-icons:vector" class="menu-icon"></iconify-icon>
-          <span>Authentication</span> 
-        </a>
-        <ul class="sidebar-submenu">
-          <li>
-            <a href="sign-in.html"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Sign In</a>
-          </li>
-          <li>
-            <a href="sign-up.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Sign Up</a>
-          </li>
-          <li>
-            <a href="forgot-password.html"><i class="ri-circle-fill circle-icon text-info-main w-auto"></i> Forgot Password</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="gallery.html">
-          <iconify-icon icon="solar:gallery-wide-linear" class="menu-icon"></iconify-icon>
-          <span>Gallery</span> 
-        </a>
-      </li>
-      <li>
-        <a href="pricing.html">
-          <iconify-icon icon="hugeicons:money-send-square" class="menu-icon"></iconify-icon>
-          <span>Pricing</span> 
-        </a>
-      </li>
-      <li class="dropdown">
-        <a href="javascript:void(0)">
-          <i class="ri-news-line text-xl me-10"></i>
-          <span>Blog</span> 
-        </a>
-        <ul class="sidebar-submenu">
-          <li>
-            <a href="blog.html"><i class="ri-circle-fill circle-icon text-primary-600 w-auto"></i> Blog</a>
-          </li>
-          <li>
-            <a href="blog-details.html"><i class="ri-circle-fill circle-icon text-warning-main w-auto"></i> Blog Details</a>
-          </li>
-          <li>
-            <a href="add-blog.html"><i class="ri-circle-fill circle-icon text-info-main w-auto"></i> Add Blog</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="testimonials.html">
-          <i class="ri-star-line text-xl me-10"></i>
-          <span>Testimonial</span> 
-        </a>
-      </li>
-      <li>
-        <a href="faq.html">
-          <iconify-icon icon="mage:message-question-mark-round" class="menu-icon"></iconify-icon>
-          <span>FAQs</span> 
-        </a>
-      </li>
-      <li>
-        <a href="error.html">
-          <iconify-icon icon="streamline:straight-face" class="menu-icon"></iconify-icon>
-          <span>404</span> 
-        </a>
-      </li>
-      <li>
-        <a href="terms-condition.html">
-          <iconify-icon icon="octicon:info-24" class="menu-icon"></iconify-icon>
-          <span>Terms & Conditions</span> 
-        </a>
-      </li>
-      <li>
-        <a href="coming-soon.html">
-          <i class="ri-rocket-line text-xl me-10"></i>
-          <span>Coming Soon</span> 
-        </a>
-      </li>
-      <li>
-        <a href="maintenance.html">
-          <i class="ri-hammer-line text-xl me-10"></i>
-          <span>Maintenance</span> 
-        </a>
-      </li>
-      <li>
-        <a href="blank-page.html">
-          <i class="ri-checkbox-multiple-blank-line text-xl me-10"></i>
-          <span>Blank Page</span> 
-        </a>
-      </li>
+      
       <li class="dropdown">
         <a href="javascript:void(0)">
           <iconify-icon icon="icon-park-outline:setting-two" class="menu-icon"></iconify-icon>
@@ -840,11 +470,11 @@ $user_id = get_current_user_id();
     
     <div class="row gy-4">
         <div class="col-12">
-            <div class="card radius-12">
+            <div class="radius-12">
                 <div class="card-body p-16">
                     <div class="row gy-4">
                         <div class="col-xxl-3 col-xl-4 col-sm-6">
-                            <div class="px-20 py-16 shadow-none radius-8 h-100 gradient-deep-1 left-line line-bg-primary position-relative overflow-hidden">
+                            <div class="px-20 py-16 shadow-none radius-8 h-100 left-line line-bg-primary position-relative overflow-hidden bg-white">
                                 <div class="d-flex flex-wrap align-items-center justify-content-between gap-1 mb-8">
                                     <div>
                                         <span class="mb-2 fw-medium text-secondary-light text-md">Total Investment</span>
@@ -933,34 +563,7 @@ $user_id = get_current_user_id();
                             <option>Today</option>
                         </select>
                     </div>
-                    <ul class="d-flex flex-wrap align-items-center justify-content-center my-3 gap-24">
-                        <li class="d-flex flex-column gap-1">
-                            <div class="d-flex align-items-center gap-2">
-                                <span class="w-8-px h-8-px rounded-pill bg-primary-600"></span>
-                                <span class="text-secondary-light text-sm fw-semibold">Income </span>
-                            </div>
-                            <div class="d-flex align-items-center gap-8">
-                                <h6 class="mb-0">$26,201</h6>
-                                <span class="text-success-600 d-flex align-items-center gap-1 text-sm fw-bolder">
-                                    10%
-                                    <i class="ri-arrow-up-s-fill d-flex"></i>
-                                </span>
-                            </div>
-                        </li>
-                        <li class="d-flex flex-column gap-1">
-                            <div class="d-flex align-items-center gap-2">
-                                <span class="w-8-px h-8-px rounded-pill bg-warning-600"></span>
-                                <span class="text-secondary-light text-sm fw-semibold">Expenses </span>
-                            </div>
-                            <div class="d-flex align-items-center gap-8">
-                                <h6 class="mb-0">$18,120</h6>
-                                <span class="text-danger-600 d-flex align-items-center gap-1 text-sm fw-bolder">
-                                    10%
-                                    <i class="ri-arrow-down-s-fill d-flex"></i>
-                                </span>
-                            </div>
-                        </li>
-                    </ul>
+                    
                     <div id="incomeExpense" class="apexcharts-tooltip-style-1"></div>
                 </div>
             </div>
@@ -1200,7 +803,6 @@ $user_id = get_current_user_id();
   <div class="row align-items-center justify-content-between">
     <div class="col-auto">
       <p class="mb-0">© 2024 WowDash. All Rights Reserved.</p>
-      <?php var_dump('test')?>
     </div>
     <div class="col-auto">
       <p class="mb-0">Made by <span class="text-primary-600">wowtheme7</span></p>
@@ -1301,7 +903,7 @@ $user_id = get_current_user_id();
             stroke: {
                 curve: 'smooth',
                 width: 3,
-                colors: [color1, color2], // Use two colors for the lines
+                colors: ['#FF3C48'], // Use two colors for the lines
                 lineCap: 'round'
             },
             grid: {
@@ -1336,16 +938,16 @@ $user_id = get_current_user_id();
             },
             fill: {
                 type: 'gradient',
-                colors: [color1, color2],
+                colors: ['#FF3C48'],
                 gradient: {
                     shade: 'light',
                     type: 'vertical',
-                    shadeIntensity: 0.5,
+                    shadeIntensity: 0.2,
                     gradientToColors: [undefined, `${color2}00`],
                     inverseColors: false,
-                    opacityFrom: [0.4, 0.6],
-                    opacityTo: [0.3, 0.3],
-                    stops: [0, 100],
+                    opacityFrom: [0.7, 0.1],
+                    opacityTo: [0.1, 0.1],
+                    stops: [0, 80],
                 },
             },
             markers: {
@@ -1417,6 +1019,7 @@ $user_id = get_current_user_id();
       legend: {
           show: false 
       },
+      
       chart: {
         type: 'bar',
         height: 260,
@@ -1462,6 +1065,7 @@ $user_id = get_current_user_id();
 
     var chart = new ApexCharts(document.querySelector("#purchaseSaleChart"), options);
     chart.render();
+    
   // ================================ Purchase & sale chart End ================================ 
 
 </script>
