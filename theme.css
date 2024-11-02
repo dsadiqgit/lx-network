@@ -95,7 +95,7 @@
   align-items: flex-end;
 }
 
-.post-password-form [type=submit] {
+.post-password-form [type="submit"] {
   margin-inline-start: 3px;
 }
 
@@ -137,7 +137,7 @@
   width: 100%;
   max-height: 500px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (max-width: 991px) {
   .post .wp-post-image {
@@ -180,8 +180,9 @@
   border-radius: 50%;
   margin-inline-end: 10px;
 }
-html[dir=rtl] #comments .comment .avatar, body.rtl #comments .comment .avatar,
-html[dir=rtl] #comments .pingback .avatar,
+html[dir="rtl"] #comments .comment .avatar,
+body.rtl #comments .comment .avatar,
+html[dir="rtl"] #comments .pingback .avatar,
 body.rtl #comments .pingback .avatar {
   left: auto;
   right: 0;
@@ -217,7 +218,8 @@ body.rtl #comments .pingback .avatar {
   left: 0;
   width: auto;
 }
-html[dir=rtl] #comments ol.comment-list .children:before, body.rtl #comments ol.comment-list .children:before {
+html[dir="rtl"] #comments ol.comment-list .children:before,
+body.rtl #comments ol.comment-list .children:before {
   content: "↩";
   left: auto;
   right: 0;
@@ -240,7 +242,8 @@ html[dir=rtl] #comments ol.comment-list .children:before, body.rtl #comments ol.
     position: inherit;
     float: left;
   }
-  html[dir=rtl] #comments .comment .avatar, body.rtl #comments .comment .avatar {
+  html[dir="rtl"] #comments .comment .avatar,
+  body.rtl #comments .comment .avatar {
     float: right;
   }
 }
@@ -248,20 +251,35 @@ html[dir=rtl] #comments ol.comment-list .children:before, body.rtl #comments ol.
 /**
  * Responsive layouts
  */
-.site-header .header-inner, .site-header:not(.dynamic-header), .site-footer .footer-inner, .site-footer:not(.dynamic-footer), body:not([class*=elementor-page-]) .site-main, .page-header .entry-title {
+.site-header .header-inner,
+.site-header:not(.dynamic-header),
+.site-footer .footer-inner,
+.site-footer:not(.dynamic-footer),
+body:not([class*="elementor-page-"]) .site-main,
+.page-header .entry-title {
   margin-inline-start: auto;
   margin-inline-end: auto;
   width: 100%;
 }
 
 @media (max-width: 575px) {
-  .site-header .header-inner, .site-header:not(.dynamic-header), .site-footer .footer-inner, .site-footer:not(.dynamic-footer), body:not([class*=elementor-page-]) .site-main, .page-header .entry-title {
+  .site-header .header-inner,
+  .site-header:not(.dynamic-header),
+  .site-footer .footer-inner,
+  .site-footer:not(.dynamic-footer),
+  body:not([class*="elementor-page-"]) .site-main,
+  .page-header .entry-title {
     padding-inline-start: 10px;
     padding-inline-end: 10px;
   }
 }
 @media (min-width: 576px) {
-  .site-header .header-inner, .site-header:not(.dynamic-header), .site-footer .footer-inner, .site-footer:not(.dynamic-footer), body:not([class*=elementor-page-]) .site-main, .page-header .entry-title {
+  .site-header .header-inner,
+  .site-header:not(.dynamic-header),
+  .site-footer .footer-inner,
+  .site-footer:not(.dynamic-footer),
+  body:not([class*="elementor-page-"]) .site-main,
+  .page-header .entry-title {
     max-width: 500px;
   }
   .site-header.header-full-width .header-inner {
@@ -272,7 +290,12 @@ html[dir=rtl] #comments ol.comment-list .children:before, body.rtl #comments ol.
   }
 }
 @media (min-width: 768px) {
-  .site-header .header-inner, .site-header:not(.dynamic-header), .site-footer .footer-inner, .site-footer:not(.dynamic-footer), body:not([class*=elementor-page-]) .site-main, .page-header .entry-title {
+  .site-header .header-inner,
+  .site-header:not(.dynamic-header),
+  .site-footer .footer-inner,
+  .site-footer:not(.dynamic-footer),
+  body:not([class*="elementor-page-"]) .site-main,
+  .page-header .entry-title {
     max-width: 600px;
   }
   .site-header.header-full-width {
@@ -283,7 +306,12 @@ html[dir=rtl] #comments ol.comment-list .children:before, body.rtl #comments ol.
   }
 }
 @media (min-width: 992px) {
-  .site-header .header-inner, .site-header:not(.dynamic-header), .site-footer .footer-inner, .site-footer:not(.dynamic-footer), body:not([class*=elementor-page-]) .site-main, .page-header .entry-title {
+  .site-header .header-inner,
+  .site-header:not(.dynamic-header),
+  .site-footer .footer-inner,
+  .site-footer:not(.dynamic-footer),
+  body:not([class*="elementor-page-"]) .site-main,
+  .page-header .entry-title {
     max-width: 800px;
   }
   .site-header.header-full-width {
@@ -294,7 +322,12 @@ html[dir=rtl] #comments ol.comment-list .children:before, body.rtl #comments ol.
   }
 }
 @media (min-width: 1200px) {
-  .site-header .header-inner, .site-header:not(.dynamic-header), .site-footer .footer-inner, .site-footer:not(.dynamic-footer), body:not([class*=elementor-page-]) .site-main, .page-header .entry-title {
+  .site-header .header-inner,
+  .site-header:not(.dynamic-header),
+  .site-footer .footer-inner,
+  .site-footer:not(.dynamic-footer),
+  body:not([class*="elementor-page-"]) .site-main,
+  .page-header .entry-title {
     max-width: 1140px;
   }
   .site-header.header-full-width {

@@ -305,3 +305,8 @@ function add_custom_user_export_data($user, $fields) {
     return $fields;
 }
 add_filter('export_user_data', 'add_custom_user_export_data', 10, 2);
+
+function wpdocs_custom_excerpt_length( $length ) {
+	return 10;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );

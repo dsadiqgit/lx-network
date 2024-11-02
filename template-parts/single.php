@@ -14,7 +14,9 @@ while ( have_posts() ) :
 	?>
 
 <main id="content" <?php post_class( 'site-main' ); ?>>
-
+	<?php if ( has_post_thumbnail() ):?>
+	<div class="featured-image-wrap"><?php the_post_thumbnail(); ?></div>
+	<?php endif; ?>
 	<?php if ( apply_filters( 'hello_elementor_page_title', true ) ) : ?>
 		<div class="page-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

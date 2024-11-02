@@ -126,100 +126,6 @@ $user_id = get_current_user_id();
     </div>
     <div class="col-auto">
       <div class="d-flex flex-wrap align-items-center gap-3">
-        <button type="button" data-theme-toggle class="w-40-px h-40-px bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center"></button>
-        <div class="dropdown d-none d-sm-inline-block">
-          <button class="has-indicator w-40-px h-40-px bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center" type="button" data-bs-toggle="dropdown">
-            <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/lang-flag.png" alt="image" class="w-24 h-24 object-fit-cover rounded-circle">
-          </button>
-          <div class="dropdown-menu to-top dropdown-menu-sm">
-            <div class="py-12 px-16 radius-8 bg-primary-50 mb-16 d-flex align-items-center justify-content-between gap-2">
-              <div>
-                <h6 class="text-lg text-primary-light fw-semibold mb-0">Choose Your Language</h6>
-              </div>
-            </div>
-
-            <div class="max-h-400-px overflow-y-auto scroll-sm pe-8">
-              <div class="form-check style-check d-flex align-items-center justify-content-between mb-16">
-                <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="english"> 
-                  <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag1.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
-                    <span class="text-md fw-semibold mb-0">English</span>
-                  </span>
-                </label>
-                <input class="form-check-input" type="radio" name="crypto" id="english">
-              </div>
-  
-              <div class="form-check style-check d-flex align-items-center justify-content-between mb-16">
-                <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="japan"> 
-                  <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag2.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
-                    <span class="text-md fw-semibold mb-0">Japan</span>
-                  </span>  
-                </label>
-                <input class="form-check-input" type="radio" name="crypto" id="japan">
-              </div>
-              
-              <div class="form-check style-check d-flex align-items-center justify-content-between mb-16">
-                <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="france"> 
-                  <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag3.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
-                    <span class="text-md fw-semibold mb-0">France</span>
-                  </span>  
-                </label>
-                <input class="form-check-input" type="radio" name="crypto" id="france">
-              </div>
-              
-              <div class="form-check style-check d-flex align-items-center justify-content-between mb-16">
-                <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="germany"> 
-                  <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag4.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
-                    <span class="text-md fw-semibold mb-0">Germany</span>
-                  </span>  
-                </label>
-                <input class="form-check-input" type="radio" name="crypto" id="germany">
-              </div>
-              
-              <div class="form-check style-check d-flex align-items-center justify-content-between mb-16">
-                <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="korea"> 
-                  <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag5.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
-                    <span class="text-md fw-semibold mb-0">South Korea</span>
-                  </span>  
-                </label>
-                <input class="form-check-input" type="radio" name="crypto" id="korea">
-              </div>
-              
-              <div class="form-check style-check d-flex align-items-center justify-content-between mb-16">
-                <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="bangladesh"> 
-                  <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag6.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
-                    <span class="text-md fw-semibold mb-0">Bangladesh</span>
-                  </span>  
-                </label>
-                <input class="form-check-input" type="radio" name="crypto" id="bangladesh">
-              </div>
-              
-              <div class="form-check style-check d-flex align-items-center justify-content-between mb-16">
-                <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="india"> 
-                  <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag7.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
-                    <span class="text-md fw-semibold mb-0">India</span>
-                  </span>  
-                </label>
-                <input class="form-check-input" type="radio" name="crypto" id="india">
-              </div>
-              <div class="form-check style-check d-flex align-items-center justify-content-between">
-                <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="canada"> 
-                  <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag8.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
-                    <span class="text-md fw-semibold mb-0">Canada</span>
-                  </span>  
-                </label>
-                <input class="form-check-input" type="radio" name="crypto" id="canada">
-              </div>
-            </div>
-          </div>
-        </div><!-- Language dropdown end -->
 
         <div class="dropdown">
           <button class="has-indicator w-40-px h-40-px bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center" type="button" data-bs-toggle="dropdown">
@@ -454,20 +360,6 @@ $user_id = get_current_user_id();
 
   <div class="dashboard-main-body">
 
-    <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-24">
-  <h6 class="fw-semibold mb-0">POS & Inventory</h6>
-  <ul class="d-flex align-items-center gap-2">
-    <li class="fw-medium">
-      <a href="index.html" class="d-flex align-items-center gap-1 hover-text-primary">
-        <iconify-icon icon="solar:home-smile-angle-outline" class="icon text-lg"></iconify-icon>
-        Dashboard
-      </a>
-    </li>
-    <li>-</li>
-    <li class="fw-medium">POS & Inventory</li>
-  </ul>
-</div>
-    
     <div class="row gy-4">
         <div class="col-12">
             <div class="radius-12">
@@ -555,7 +447,7 @@ $user_id = get_current_user_id();
             <div class="card h-100">
                 <div class="card-body p-24 mb-8">
                     <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
-                        <h6 class="mb-2 fw-bold text-lg mb-0">Income Statistics </h6>
+                        <h2 class="mb-2 fw-bold text-xl mb-0">Income Statistics </h2>
                         <select class="form-select form-select-sm w-auto bg-base border text-secondary-light">
                             <option>Yearly</option>
                             <option>Monthly</option>
@@ -569,234 +461,60 @@ $user_id = get_current_user_id();
             </div>
         </div>
         <div class="col-xxl-4 col-md-6">
-            <div class="card">
+            <div class="card pb-4">
                 <div class="card-header border-bottom">
                     <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
                         <h6 class="mb-2 fw-bold text-lg mb-0">Newsfeed</h6>
-                        <a href="javascript:void(0)" class="text-primary-600 hover-text-primary d-flex align-items-center gap-1">
+                        <a href="/news/" class="text-primary-600 hover-text-primary d-flex align-items-center gap-1">
                             View All
                             <iconify-icon icon="solar:alt-arrow-right-linear" class="icon"></iconify-icon>
                         </a>
                     </div>
                 </div>
-                <div class="card-body p-20">
-                    <div class="d-flex flex-column gap-24">
-                        <div class="d-flex align-items-center justify-content-between gap-3">
-                            <div class="d-flex align-items-center">
-                            <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/user-grid/user-grid-img1.png" alt="" class="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden">
-                            <div class="flex-grow-1">
-                                <h6 class="text-md mb-0">Psychiatry</h6>
-                                <span class="text-sm text-secondary-light fw-normal">Super Admin</span>
-                            </div>
-                            </div>
-                            <span class="text-warning-main fw-medium text-md">Pending</span>
+                <?php
+                // Define custom query parameters
+                $args = array(
+                    'posts_per_page' => 5, // Number of posts to display
+                    'post_type'      => 'post', // Post type to query
+                );
+
+                // The custom query
+                $latest_posts = new WP_Query( $args );
+
+                $latest_posts = new WP_Query(array(
+                    'post_type'      => 'post',
+                    'posts_per_page' => 5, // Limit to 5 posts
+                ));
+
+                if ( $latest_posts->have_posts() ) : 
+                    while ( $latest_posts->have_posts() ) : $latest_posts->the_post(); ?>
+                        <div class="d-flex p-20">
+                            <a href="<?php the_permalink(); ?>" class="d-flex w-100 text-decoration-none text-inherit">
+                                <?php if ( has_post_thumbnail() ) : ?>
+                                    <div class="w-90-px h-full rounded-circle flex-shrink-0 me-12 overflow-hidden">
+                                        <?php the_post_thumbnail(); ?>
+                                    </div>
+                                <?php endif; ?>
+                                <div>
+                                    <h6 class="text-md mb-0"><?php the_title(); ?></h6>
+                                    <span><?php echo get_the_excerpt(); ?></span>
+                                    <?php echo get_the_date(); ?>
+                                </div>
+                            </a>
                         </div>
-                        <div class="d-flex align-items-center justify-content-between gap-3">
-                            <div class="d-flex align-items-center">
-                            <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/user-grid/user-grid-img2.png" alt="" class="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden">
-                            <div class="flex-grow-1">
-                                <h6 class="text-md mb-0">Orthopedic</h6>
-                                <span class="text-sm text-secondary-light fw-normal">Admin</span>
-                            </div>
-                            </div>
-                            <span class="text-success-main fw-medium text-md">Active</span>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between gap-3">
-                            <div class="d-flex align-items-center">
-                            <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/user-grid/user-grid-img3.png" alt="" class="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden">
-                            <div class="flex-grow-1">
-                                <h6 class="text-md mb-0">Cardiology</h6>
-                                <span class="text-sm text-secondary-light fw-normal">Manager</span>
-                            </div>
-                            </div>
-                            <span class="text-success-main fw-medium text-md">Active</span>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between gap-3">
-                            <div class="d-flex align-items-center">
-                            <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/user-grid/user-grid-img4.png" alt="" class="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden">
-                            <div class="flex-grow-1">
-                                <h6 class="text-md mb-0">Pediatrics</h6>
-                                <span class="text-sm text-secondary-light fw-normal">Admin</span>
-                            </div>
-                            </div>
-                            <span class="text-success-main fw-medium text-md">Active</span>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between gap-3">
-                            <div class="d-flex align-items-center">
-                            <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/user-grid/user-grid-img1.png" alt="" class="w-40-px h-40-px rounded-circle flex-shrink-0 me-12 overflow-hidden">
-                            <div class="flex-grow-1">
-                                <h6 class="text-md mb-0">Neurology </h6>
-                                <span class="text-sm text-secondary-light fw-normal">Manager</span>
-                            </div>
-                            </div>
-                            <span class="text-success-main fw-medium text-md">Active</span>
-                        </div>
-                    </div>
-                </div>
+                        <hr class="h-px my-8 bg-gray-200 border-1 dark:bg-gray-700 mx-20">
+                    <?php endwhile; 
+                    wp_reset_postdata(); // Reset post data
+                else : 
+                    echo '<p>No posts found.</p>';
+                endif;
+                ?>
+                
             </div>
         </div>
         
         
-        <div class="col-xxl-4 col-md-6">
-            <div class="card h-100">
-                <div class="card-header">
-                    <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
-                        <h6 class="mb-2 fw-bold text-lg mb-0">Purchase & Sales</h6>
-                        <select class="form-select form-select-sm w-auto bg-base text-secondary-light">
-                            <option>This Month</option>
-                            <option>This Week</option>
-                            <option>This Year</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="card-body p-24">
-                    <ul class="d-flex flex-wrap align-items-center justify-content-center my-3 gap-3">
-                        <li class="d-flex align-items-center gap-2">
-                            <span class="w-12-px h-8-px rounded-pill bg-warning-600"></span>
-                            <span class="text-secondary-light text-sm fw-semibold">Purchase: $<span class="text-primary-light fw-bold">500</span>
-                            </span>
-                        </li>
-                        <li class="d-flex align-items-center gap-2">
-                            <span class="w-12-px h-8-px rounded-pill bg-success-600"></span>
-                            <span class="text-secondary-light text-sm fw-semibold">Sales: $<span class="text-primary-light fw-bold">800</span>
-                        </span>
-                        </li>
-                    </ul>
-                    <div id="purchaseSaleChart" class="margin-16-minus y-value-left"></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xxl-8">
-            <div class="card h-100">
-                <div class="card-header">
-                    <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
-                        <h6 class="mb-2 fw-bold text-lg mb-0">Recent Transactions</h6>
-                        <a href="javascript:void(0)" class="text-primary-600 hover-text-primary d-flex align-items-center gap-1">
-                            View All
-                            <iconify-icon icon="solar:alt-arrow-right-linear" class="icon"></iconify-icon>
-                        </a>
-                    </div>
-                </div>
-                <div class="card-body p-24">
-                    <div class="table-responsive scroll-sm">
-                        <table class="table bordered-table mb-0">
-                            <thead>
-                                <tr>
-                                    <th scope="col">SL</th>
-                                    <th scope="col">Date  </th>
-                                    <th scope="col">Payment Type</th>
-                                    <th scope="col">Paid Amount</th>
-                                    <th scope="col">Due Amount</th>
-                                    <th scope="col">Payable Amount</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <span class="text-secondary-light">1</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">21 Jun 2024</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">Cash</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$0.00</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$150.00</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$150.00</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="text-secondary-light">2</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">21 Jun 2024</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">Bank</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$570 </span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$0.00</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$570.00</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="text-secondary-light">3</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">21 Jun 2024</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">PayPal</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$300.00</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$100.00</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$200.00</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="text-secondary-light">4</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">21 Jun 2024</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">Cash</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$0.00</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$150.00</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$150.00</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="text-secondary-light">3</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">21 Jun 2024</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">PayPal</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$300.00</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$100.00</span>
-                                    </td>
-                                    <td>
-                                        <span class="text-secondary-light">$200.00</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
   </div>
   <footer class="d-footer">
@@ -841,232 +559,187 @@ $user_id = get_current_user_id();
 <script>
     
     // ===================== Income VS Expense Start =============================== 
-    function createChartTwo(chartId, color1, color2) {
-        // Sample data fetched from PHP
-        var rawData = [
-            <?php echo get_field('oct_24', 'user_' . $user_id);?>,
-            <?php echo get_field('nov_24', 'user_' . $user_id);?>,
-            <?php echo get_field('dec_24', 'user_' . $user_id);?>,
-            // <?php echo get_field('jan_25', 'user_' . $user_id);?>,
-            // <?php echo get_field('feb_25', 'user_' . $user_id);?>,
-            // <?php echo get_field('mar_25', 'user_' . $user_id);?>,
-            // <?php echo get_field('apr_25', 'user_' . $user_id);?>,
-            // <?php echo get_field('may_25', 'user_' . $user_id);?>,
-            // <?php echo get_field('jun_25', 'user_' . $user_id);?>,
-            // <?php echo get_field('jul_25', 'user_' . $user_id);?>,
-            // <?php echo get_field('aug_25', 'user_' . $user_id);?>,
-            // <?php echo get_field('sep_25', 'user_' . $user_id);?>,
-            // <?php echo get_field('oct_25', 'user_' . $user_id);?>,
+   function createChartTwo(chartId, color1, color2) {
+    // Sample data fetched from PHP
+     var rawData = [
+    <?php 
+    echo get_field('oct_24', 'user_' . $user_id) !== null && get_field('oct_24', 'user_' . $user_id) !== '' ? get_field('oct_24', 'user_' . $user_id) : 0; 
+    ?>,
+    <?php 
+    echo get_field('nov_24', 'user_' . $user_id) !== null && get_field('nov_24', 'user_' . $user_id) !== '' ? get_field('nov_24', 'user_' . $user_id) : 0; 
+    ?>,
+    <?php 
+    echo get_field('dec_24', 'user_' . $user_id) !== null && get_field('dec_24', 'user_' . $user_id) !== '' ? get_field('dec_24', 'user_' . $user_id) : 0; 
+    ?>,
+    <?php 
+    echo get_field('jan_25', 'user_' . $user_id) !== null && get_field('jan_25', 'user_' . $user_id) !== '' ? get_field('jan_25', 'user_' . $user_id) : 0; 
+    ?>,
+    <?php 
+    echo get_field('feb_25', 'user_' . $user_id) !== null && get_field('feb_25', 'user_' . $user_id) !== '' ? get_field('feb_25', 'user_' . $user_id) : 0; 
+    ?>,
+    <?php 
+    echo get_field('mar_25', 'user_' . $user_id) !== null && get_field('mar_25', 'user_' . $user_id) !== '' ? get_field('mar_25', 'user_' . $user_id) : 0; 
+    ?>,
+    <?php 
+    echo get_field('apr_25', 'user_' . $user_id) !== null && get_field('apr_25', 'user_' . $user_id) !== '' ? get_field('apr_25', 'user_' . $user_id) : 0; 
+    ?>,
+    <?php 
+    echo get_field('may_25', 'user_' . $user_id) !== null && get_field('may_25', 'user_' . $user_id) !== '' ? get_field('may_25', 'user_' . $user_id) : 0; 
+    ?>,
+    <?php 
+    echo get_field('jun_25', 'user_' . $user_id) !== null && get_field('jun_25', 'user_' . $user_id) !== '' ? get_field('jun_25', 'user_' . $user_id) : 0; 
+    ?>,
+    <?php 
+    echo get_field('jul_25', 'user_' . $user_id) !== null && get_field('jul_25', 'user_' . $user_id) !== '' ? get_field('jul_25', 'user_' . $user_id) : 0; 
+    ?>,
+    <?php 
+    echo get_field('aug_25', 'user_' . $user_id) !== null && get_field('aug_25', 'user_' . $user_id) !== '' ? get_field('aug_25', 'user_' . $user_id) : 0; 
+    ?>,
+    <?php 
+    echo get_field('sep_25', 'user_' . $user_id) !== null && get_field('sep_25', 'user_' . $user_id) !== '' ? get_field('sep_25', 'user_' . $user_id) : 0; 
+    ?>,
+    <?php 
+    echo get_field('oct_25', 'user_' . $user_id) !== null && get_field('oct_25', 'user_' . $user_id) !== '' ? get_field('oct_25', 'user_' . $user_id) : 0; 
+    ?>
 
-        ];
+    ];
 
-        // Function to replace 0 or null with the last valid number
-       function processData(data) {
-            let lastValid = null;
-            return data.map(value => {
-                // Check if the value is 0, null, undefined, or does not exist
-                if (value === 0 || value === null || value === undefined) {
-                    return lastValid !== null ? lastValid : 0; // Use the last valid number or 0 if none exists
-                }
-                lastValid = value; // Update the last valid number
-                return value; // Return the current value
-            });
-        }
+    // Function to replace 0, null, or empty with the last valid number
+    function processData(data) {
+        let lastValid = 0; // Start with 0 as the last valid number
+        return data.map(value => {
+            // Convert to number and handle undefined, null, or empty values
+            value = Number(value);
+            if (isNaN(value) || value === 0) {
+                return lastValid; // Use last valid number
+            }
+            lastValid = value; // Update last valid number
+            return value; // Return the current valid value
+        });
+    }
 
-        var processedData = processData(rawData);
+    var processedData = processData(rawData);
 
-        var options = {
-            series: [{
-                name: 'series1',
-                data: processedData
-            }],
-            legend: {
-                show: false 
+    var options = {
+        series: [{
+            name: 'Amount',
+            data: processedData
+        }],
+        legend: {
+            show: false 
+        },
+        chart: {
+            type: 'area',
+            width: '100%',
+            height: '100%',
+            toolbar: {
+                show: false
             },
-            chart: {
-                type: 'area',
-                width: '100%',
-                height: 270,
-                toolbar: {
-                    show: false
-                },
-                padding: {
-                    left: 0,
-                    right: 0,
-                    top: 0,
-                    bottom: 0
-                }
-            },
-            dataLabels: {
-                enabled: false
-            },
-            stroke: {
-                curve: 'smooth',
-                width: 3,
-                colors: ['#FF3C48'], // Use two colors for the lines
-                lineCap: 'round'
-            },
-            grid: {
-                show: true,
-                borderColor: '#D1D5DB',
-                strokeDashArray: 1,
-                position: 'back',
-                xaxis: {
-                    lines: {
-                        show: false
-                    }
-                },
-                yaxis: {
-                    lines: {
-                        show: true
-                    }
-                },
-                row: {
-                    colors: undefined,
-                    opacity: 0.5
-                },
-                column: {
-                    colors: undefined,
-                    opacity: 0.5
-                },
-                padding: {
-                    top: -20,
-                    right: 0,
-                    bottom: -10,
-                    left: 0
-                },
-            },
-            fill: {
-                type: 'gradient',
-                colors: ['#FF3C48'],
-                gradient: {
-                    shade: 'light',
-                    type: 'vertical',
-                    shadeIntensity: 0.2,
-                    gradientToColors: [undefined, `${color2}00`],
-                    inverseColors: false,
-                    opacityFrom: [0.7, 0.1],
-                    opacityTo: [0.1, 0.1],
-                    stops: [0, 80],
-                },
-            },
-            markers: {
-                colors: [color1, color2],
-                strokeWidth: 3,
-                size: 0,
-                hover: {
-                    size: 10
-                }
-            },
+            padding: {
+                left: 0,
+                right: 0,
+                top: 0,
+                bottom: 0
+            }
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            curve: 'smooth',
+            width: 3,
+            colors: ['#FF3C48'],
+            lineCap: 'round'
+        },
+        grid: {
+            show: true,
+            borderColor: '#D1D5DB',
+            strokeDashArray: 1,
+            position: 'back',
             xaxis: {
-                labels: {
+                lines: {
                     show: false
-                },
-                categories: ['Oct24', 'Nov24', 'Dec24', 'Jan25', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-                tooltip: {
-                    enabled: false
-                },
-                labels: {
-                    formatter: function (value) {
-                        return value;
-                    },
-                    style: {
-                        fontSize: "14px"
-                    }
                 }
             },
             yaxis: {
-                labels: {
-                    formatter: function (value) {
-                        return "$" + value + "k";
-                    },
-                    style: {
-                        fontSize: "14px"
-                    }
-                },
+                lines: {
+                    show: true
+                }
             },
+            padding: {
+                top: -20,
+                right: 0,
+                bottom: -10,
+                left: 0
+            },
+        },
+        fill: {
+            type: 'gradient',
+            colors: ['#FF3C48'],
+            gradient: {
+                shade: 'light',
+                type: 'vertical',
+                shadeIntensity: 0.2,
+                gradientToColors: [undefined, `${color2}00`],
+                inverseColors: false,
+                opacityFrom: [0.7, 0.1],
+                opacityTo: [0.1, 0.1],
+                stops: [0, 80],
+            },
+        },
+        markers: {
+            colors: [color1, color2],
+            strokeWidth: 3,
+            size: 0,
+            hover: {
+                size: 10
+            }
+        },
+        xaxis: {
+            labels: {
+                show: true
+            },
+            categories: ['Oct24', 'Nov24', 'Dec24', 'Jan25', 'Feb25', 'Mar25', 'Apr25', 'May25', 'Jun25', 'Jul25', 'Aug25', 'Sep25'],
             tooltip: {
-                x: {
-                    format: 'dd/MM/yy HH:mm'
+                enabled: false
+            },
+            labels: {
+                formatter: function (value) {
+                    return value;
+                },
+                style: {
+                    fontSize: "14px"
                 }
             }
-        };
+        },
+        yaxis: {
+            labels: {
+                formatter: function (value) {
+                    return "£" + value;
+                },
+                style: {
+                    fontSize: "14px"
+                }
+            },
+        },
+        tooltip: {
+            x: {
+                format: 'dd/MM/yy HH:mm'
+            }
+        }
+    };
 
-        var chart = new ApexCharts(document.querySelector(`#${chartId}`), options);
-        chart.render();
-    }
+    var chart = new ApexCharts(document.querySelector(`#${chartId}`), options);
+    chart.render();
 
+}
     createChartTwo('incomeExpense', '#487FFF', '#FF9F29');
     // ===================== Income VS Expense End =============================== 
 
 
-    var chart = new ApexCharts(document.querySelector("#userOverviewDonutChart"), options);
-    chart.render();
-    // ================================ Users Overview Donut chart End ================================ 
+     
   
-    // ================================ Purchase & sale chart End ================================ 
-    var options = {
-      series: [{
-        name: 'Net Profit',
-        data: [44, 100, 40, 56, 30, 58, 50]
-      }, {
-        name: 'Free Cash',
-        data: [60, 120, 60, 90, 50, 95, 90]
-      }],
-      colors: ['#45B369', '#FF9F29'],
-      labels: ['Active', 'New', 'Total'] ,
-      
-      legend: {
-          show: false 
-      },
-      
-      chart: {
-        type: 'bar',
-        height: 260,
-        toolbar: {
-          show: false
-        },
-      },
-      grid: {
-          show: true,
-          borderColor: '#D1D5DB',
-          strokeDashArray: 4, // Use a number for dashed style
-          position: 'back',
-      },
-      plotOptions: {
-        bar: {
-          borderRadius: 4,
-          columnWidth: 8,
-        },
-      },
-      dataLabels: {
-        enabled: false
-      },
-      states: {
-        hover: {
-        filter: {
-            type: 'none'
-            }
-        }
-    },
-      stroke: {
-        show: true,
-        width: 0,
-        colors: ['transparent']
-      },
-      xaxis: {
-        categories: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'],
-      },
-      fill: {
-        opacity: 1,
-        width: 18,
-      },
-    };
-
-    var chart = new ApexCharts(document.querySelector("#purchaseSaleChart"), options);
-    chart.render();
     
-  // ================================ Purchase & sale chart End ================================ 
 
 </script>
 
