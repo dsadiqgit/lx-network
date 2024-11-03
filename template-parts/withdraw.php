@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Messages
+ * Template Name: Withdraw
  */
 
 $user_id = get_current_user_id();
@@ -72,7 +72,7 @@ $user_id = get_current_user_id();
           <span>Messages</span> 
         </a>
       </li>
-      <li>
+       <li>
         <a href="/withdraw/">
           <iconify-icon icon="bi:chat-dots" class="menu-icon"></iconify-icon>
           <span>Withdraw</span> 
@@ -135,7 +135,7 @@ $user_id = get_current_user_id();
         <button type="button" data-theme-toggle class="w-40-px h-40-px bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center"></button>
         <div class="dropdown d-none d-sm-inline-block">
           <button class="has-indicator w-40-px h-40-px bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center" type="button" data-bs-toggle="dropdown">
-            <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/lang-flag.png" alt="image" class="w-24 h-24 object-fit-cover rounded-circle">
+            <img src="assets/images/lang-flag.png" alt="image" class="w-24 h-24 object-fit-cover rounded-circle">
           </button>
           <div class="dropdown-menu to-top dropdown-menu-sm">
             <div class="py-12 px-16 radius-8 bg-primary-50 mb-16 d-flex align-items-center justify-content-between gap-2">
@@ -148,7 +148,7 @@ $user_id = get_current_user_id();
               <div class="form-check style-check d-flex align-items-center justify-content-between mb-16">
                 <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="english"> 
                   <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag1.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
+                    <img src="assets/images/flags/flag1.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
                     <span class="text-md fw-semibold mb-0">English</span>
                   </span>
                 </label>
@@ -158,7 +158,7 @@ $user_id = get_current_user_id();
               <div class="form-check style-check d-flex align-items-center justify-content-between mb-16">
                 <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="japan"> 
                   <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag2.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
+                    <img src="assets/images/flags/flag2.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
                     <span class="text-md fw-semibold mb-0">Japan</span>
                   </span>  
                 </label>
@@ -168,7 +168,7 @@ $user_id = get_current_user_id();
               <div class="form-check style-check d-flex align-items-center justify-content-between mb-16">
                 <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="france"> 
                   <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag3.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
+                    <img src="assets/images/flags/flag3.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
                     <span class="text-md fw-semibold mb-0">France</span>
                   </span>  
                 </label>
@@ -178,7 +178,7 @@ $user_id = get_current_user_id();
               <div class="form-check style-check d-flex align-items-center justify-content-between mb-16">
                 <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="germany"> 
                   <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag4.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
+                    <img src="assets/images/flags/flag4.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
                     <span class="text-md fw-semibold mb-0">Germany</span>
                   </span>  
                 </label>
@@ -188,7 +188,7 @@ $user_id = get_current_user_id();
               <div class="form-check style-check d-flex align-items-center justify-content-between mb-16">
                 <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="korea"> 
                   <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag5.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
+                    <img src="assets/images/flags/flag5.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
                     <span class="text-md fw-semibold mb-0">South Korea</span>
                   </span>  
                 </label>
@@ -198,7 +198,7 @@ $user_id = get_current_user_id();
               <div class="form-check style-check d-flex align-items-center justify-content-between mb-16">
                 <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="bangladesh"> 
                   <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag6.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
+                    <img src="assets/images/flags/flag6.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
                     <span class="text-md fw-semibold mb-0">Bangladesh</span>
                   </span>  
                 </label>
@@ -208,7 +208,7 @@ $user_id = get_current_user_id();
               <div class="form-check style-check d-flex align-items-center justify-content-between mb-16">
                 <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="india"> 
                   <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag7.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
+                    <img src="assets/images/flags/flag7.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
                     <span class="text-md fw-semibold mb-0">India</span>
                   </span>  
                 </label>
@@ -217,7 +217,7 @@ $user_id = get_current_user_id();
               <div class="form-check style-check d-flex align-items-center justify-content-between">
                 <label class="form-check-label line-height-1 fw-medium text-secondary-light" for="canada"> 
                   <span class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
-                    <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/flags/flag8.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
+                    <img src="assets/images/flags/flag8.png" alt="" class="w-36-px h-36-px bg-success-subtle text-success-main rounded-circle flex-shrink-0">
                     <span class="text-md fw-semibold mb-0">Canada</span>
                   </span>  
                 </label>
@@ -244,7 +244,7 @@ $user_id = get_current_user_id();
             <a href="javascript:void(0)" class="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between">
               <div class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
                 <span class="w-40-px h-40-px rounded-circle flex-shrink-0 position-relative">
-                  <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/notification/profile-3.png" alt="">
+                  <img src="assets/images/notification/profile-3.png" alt="">
                   <span class="w-8-px h-8-px bg-success-main rounded-circle position-absolute end-0 bottom-0"></span>
                 </span> 
                 <div>
@@ -261,7 +261,7 @@ $user_id = get_current_user_id();
             <a href="javascript:void(0)" class="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between">
               <div class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
                 <span class="w-40-px h-40-px rounded-circle flex-shrink-0 position-relative">
-                  <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/notification/profile-4.png" alt="">
+                  <img src="assets/images/notification/profile-4.png" alt="">
                   <span class="w-8-px h-8-px  bg-neutral-300 rounded-circle position-absolute end-0 bottom-0"></span>
                 </span> 
                 <div>
@@ -278,7 +278,7 @@ $user_id = get_current_user_id();
             <a href="javascript:void(0)" class="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between bg-neutral-50">
               <div class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
                 <span class="w-40-px h-40-px rounded-circle flex-shrink-0 position-relative">
-                  <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/notification/profile-5.png" alt="">
+                  <img src="assets/images/notification/profile-5.png" alt="">
                   <span class="w-8-px h-8-px bg-success-main rounded-circle position-absolute end-0 bottom-0"></span>
                 </span> 
                 <div>
@@ -295,7 +295,7 @@ $user_id = get_current_user_id();
             <a href="javascript:void(0)" class="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between bg-neutral-50">
               <div class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
                 <span class="w-40-px h-40-px rounded-circle flex-shrink-0 position-relative">
-                  <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/notification/profile-6.png" alt="">
+                  <img src="assets/images/notification/profile-6.png" alt="">
                   <span class="w-8-px h-8-px bg-neutral-300 rounded-circle position-absolute end-0 bottom-0"></span>
                 </span> 
                 <div>
@@ -312,7 +312,7 @@ $user_id = get_current_user_id();
             <a href="javascript:void(0)" class="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between">
               <div class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
                 <span class="w-40-px h-40-px rounded-circle flex-shrink-0 position-relative">
-                  <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/notification/profile-7.png" alt="">
+                  <img src="assets/images/notification/profile-7.png" alt="">
                   <span class="w-8-px h-8-px bg-success-main rounded-circle position-absolute end-0 bottom-0"></span>
                 </span> 
                 <div>
@@ -362,7 +362,7 @@ $user_id = get_current_user_id();
             <a href="javascript:void(0)" class="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between bg-neutral-50">
               <div class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
                 <span class="w-44-px h-44-px bg-success-subtle text-success-main rounded-circle d-flex justify-content-center align-items-center flex-shrink-0">
-                  <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/notification/profile-1.png" alt="">
+                  <img src="assets/images/notification/profile-1.png" alt="">
                 </span> 
                 <div>
                   <h6 class="text-md fw-semibold mb-4">Ronald Richards</h6>
@@ -388,7 +388,7 @@ $user_id = get_current_user_id();
             <a href="javascript:void(0)" class="px-24 py-12 d-flex align-items-start gap-3 mb-2 justify-content-between bg-neutral-50">
               <div class="text-black hover-bg-transparent hover-text-primary d-flex align-items-center gap-3"> 
                 <span class="w-44-px h-44-px bg-success-subtle text-success-main rounded-circle d-flex justify-content-center align-items-center flex-shrink-0">
-                  <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/notification/profile-2.png" alt="">
+                  <img src="assets/images/notification/profile-2.png" alt="">
                 </span> 
                 <div>
                   <h6 class="text-md fw-semibold mb-4">Annette Black</h6>
@@ -421,7 +421,7 @@ $user_id = get_current_user_id();
 
         <div class="dropdown">
           <button class="d-flex justify-content-center align-items-center rounded-circle" type="button" data-bs-toggle="dropdown">
-            <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/user.png" alt="image" class="w-40-px h-40-px object-fit-cover rounded-circle">
+            <img src="assets/images/user.png" alt="image" class="w-40-px h-40-px object-fit-cover rounded-circle">
           </button>
           <div class="dropdown-menu to-top dropdown-menu-sm">
             <div class="py-12 px-16 radius-8 bg-primary-50 mb-16 d-flex align-items-center justify-content-between gap-2">
@@ -461,7 +461,7 @@ $user_id = get_current_user_id();
   <div class="dashboard-main-body">
 
     <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-24">
-  <h4 class="fw-semibold mb-0">Messages</h4>
+  <h4 class="fw-semibold mb-0">Withdraw</h4>
   <ul class="d-flex align-items-center gap-2">
     <li class="fw-medium">
       <a href="index.html" class="d-flex align-items-center gap-1 hover-text-primary">
@@ -470,77 +470,47 @@ $user_id = get_current_user_id();
       </a>
     </li>
     <li>-</li>
-    <li class="fw-medium">Messages</li>
+    <li class="fw-medium">Input Layout</li>
   </ul>
 </div>
     
-    <div class="chat-wrapper">
-      
-      <div class="card w-100">
-        <div class="chat-sidebar-single active">
-          <div class="info">
-            <h2 class="text-md mb-0">LX Network</h2>
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-title mb-0">Enter Your Details Below</h5>
           </div>
-          <div class="action d-inline-flex align-items-center gap-3">
-            <button type="button" class="text-xl text-primary-light">
-              <iconify-icon icon="mi:call"></iconify-icon>
-            </button>
-            <button type="button" class="text-xl text-primary-light">
-              <iconify-icon icon="fluent:video-32-regular"></iconify-icon>
-            </button>
-            <div class="btn-group">
-              <button type="button" class="text-primary-light text-xl" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                <iconify-icon icon="tabler:dots-vertical"></iconify-icon>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-lg-end border">
-                <li>
-                  <button class="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2" type="button">
-                    <iconify-icon icon="mdi:clear-circle-outline"></iconify-icon>
-                    Clear All
-                  </button>
-                </li>
-                <li>
-                  <button class="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2" type="button">
-                    <iconify-icon icon="ic:baseline-block"></iconify-icon>
-                    Block
-                  </button>
-                </li>
-              </ul>
+          <div class="card-body">
+            <div class="row gy-3">
+              <div class="col-12">
+                <label class="form-label">First Name</label>
+                <input type="text" name="#0" class="form-control" placeholder="Enter First Name">
+              </div>
+              <div class="col-12">
+                <label class="form-label">Last Name</label>
+                <input type="text" name="#0" class="form-control" placeholder="Enter Last Name">
+              </div>
+              <div class="col-12">
+                <label class="form-label">Sort Code</label>
+                <input type="text" name="#0" class="form-control" placeholder="Enter Sortcode">
+              </div>
+              <div class="col-12">
+                <label class="form-label">Last Name</label>
+                <input type="text" name="#0" class="form-control" placeholder="Enter Account Number">
+              </div>
+              <div class="col-12">
+                <label class="form-label">Email</label>
+                <input type="email" name="#0" class="form-control" placeholder="Enter Email">
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary-600">Submit</button>
+              </div>
             </div>
           </div>
-        </div><!-- chat-sidebar-single end -->
-        <div class="chat-message-list">
-          
-          <?php
-          // Display all messages from the custom messages table
-            global $wpdb;
-            $table_name = $wpdb->prefix . 'user_messages';
-
-            // Fetch messages ordered by creation date (newest first)
-            $messages = $wpdb->get_results("SELECT * FROM $table_name ORDER BY created_at DESC");
-
-            ?>
-            <div class="container">
-                <?php if ($messages): ?>
-            <ul class="mb-20">
-            <?php foreach ($messages as $message): ?>
-              <div class="chat-single-message left">
-                <div class="chat-message-content">
-                  <p><?php echo esc_html($message->message); ?></p>
-                  <small>Sent on: <?php echo esc_html(date('F j, Y, g:i a', strtotime($message->created_at))); ?></small>
-              </div>  
-            </div>
-            <?php endforeach; ?>
-        </ul>
-        <?php else: ?>
-            <p>No messages found.</p>
-        <?php endif; ?>
         </div>
       </div>
+      
     </div>
-    
-    </div>
-    
   </div>
 
   <footer class="d-footer">
@@ -556,24 +526,24 @@ $user_id = get_current_user_id();
 </main>
   
   <!-- jQuery library js -->
-  <script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/jquery-3.7.1.min.js"></script>
+<script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/jquery-3.7.1.min.js"></script>
   <!-- Bootstrap js -->
-  <script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/bootstrap.bundle.min.js"></script>
+<script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/bootstrap.bundle.min.js"></script>
   <!-- Apex Chart js -->
-  <script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/apexcharts.min.js"></script>
+<script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/apexcharts.min.js"></script>
   <!-- Data Table js -->
-  <script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/dataTables.min.js"></script>
+<script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/dataTables.min.js"></script>
   <!-- Iconify Font js -->
-  <script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/iconify-icon.min.js"></script>
+<script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/iconify-icon.min.js"></script>
   <!-- jQuery UI js -->
-  <script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/jquery-ui.min.js"></script>
+<script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/jquery-ui.min.js"></script>
   <!-- Vector Map js -->
-  <script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/jquery-jvectormap-2.0.5.min.js"></script>
-  <script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/jquery-jvectormap-world-mill-en.js"></script>
+<script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/jquery-jvectormap-2.0.5.min.js"></script>
+<script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/jquery-jvectormap-world-mill-en.js"></script>
   <!-- Popup js -->
-  <script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/magnifc-popup.min.js"></script>
+<script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/magnifc-popup.min.js"></script>
   <!-- Slick Slider js -->
-  <script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/slick.min.js"></script>
+ <script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/slick.min.js"></script>
   <!-- prism js -->
   <script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/lib/prism.js"></script>
   <!-- file upload js -->
@@ -583,5 +553,3 @@ $user_id = get_current_user_id();
   
   <!-- main js -->
   <script src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/js/app.js"></script>
-</body>
-</html>

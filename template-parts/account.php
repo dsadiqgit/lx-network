@@ -51,7 +51,7 @@ $user_id = get_current_user_id();
     <iconify-icon icon="radix-icons:cross-2"></iconify-icon>
   </button>
   <div>
-    <a href="index.html" class="sidebar-logo">
+    <a href="/account/" class="sidebar-logo">
       <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/logo.png" alt="site logo" class="light-logo">
       <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/logo-light.png" alt="site logo" class="dark-logo">
       <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/logo-icon.png" alt="site logo" class="logo-icon">
@@ -70,6 +70,12 @@ $user_id = get_current_user_id();
         <a href="/messages/">
           <iconify-icon icon="bi:chat-dots" class="menu-icon"></iconify-icon>
           <span>Messages</span> 
+        </a>
+      </li>
+      <li>
+        <a href="/withdraw/">
+          <iconify-icon icon="bi:chat-dots" class="menu-icon"></iconify-icon>
+          <span>Withdraw</span> 
         </a>
       </li>
       
@@ -370,7 +376,7 @@ $user_id = get_current_user_id();
                                 <div class="d-flex flex-wrap align-items-center justify-content-between gap-1 mb-8">
                                     <div>
                                         <span class="mb-2 fw-medium text-secondary-light text-md">Total Investment</span>
-                                        <h6 class="fw-semibold mb-1"><?php echo get_field('total_investment', 'user_' . $user_id);?></h6>
+                                        <h6 class="fw-semibold mb-1">£<?php echo get_field('total_investment', 'user_' . $user_id);?></h6>
                                     </div>
                                       <span class="w-44-px h-44-px radius-8 d-inline-flex justify-content-center align-items-center text-2xl mb-12">
                                         <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/grafix.png">
