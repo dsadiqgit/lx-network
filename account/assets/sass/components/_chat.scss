@@ -39,7 +39,7 @@
     height: 80px;
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       bottom: 4px;
       inset-inline-end: 9px;
       width: 12px;
@@ -117,7 +117,7 @@
     position: relative;
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       bottom: 1px;
       right: 2px;
       width: 8px;
@@ -161,7 +161,7 @@
 .chat-message-list {
   flex-grow: 1;
   min-height: 350px;
-  max-height: 511px;
+  max-height: 711px;
   padding: rem(24px);
   display: flex;
   flex-flow: column;
@@ -170,7 +170,7 @@
     max-height: 375px;
   }
   @include media(xxl) {
-    max-height: 511px;
+    max-height: 711px;
   }
   &::-webkit-scrollbar {
     width: 10px;

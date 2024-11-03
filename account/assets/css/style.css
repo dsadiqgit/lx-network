@@ -14362,7 +14362,7 @@ td.fc-header-center {
 .chat-message-list {
   flex-grow: 1;
   min-height: 350px;
-  max-height: 511px;
+  max-height: 711px;
   padding: 1.5rem;
   display: flex;
   flex-flow: column;
@@ -14376,7 +14376,7 @@ td.fc-header-center {
 }
 @media (min-width: 1400px) {
   .chat-message-list {
-    max-height: 511px;
+    max-height: 711px;
   }
 }
 .chat-message-list::-webkit-scrollbar {
@@ -15441,3 +15441,7 @@ td.fc-header-center {
 }
 
 /* === footer css end === */
+
+.vh-8 {
+  height: 8vh;
+}

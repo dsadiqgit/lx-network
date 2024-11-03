@@ -69,7 +69,7 @@ $user_id = get_current_user_id();
       <li>
         <a href="/messages/">
           <iconify-icon icon="bi:chat-dots" class="menu-icon"></iconify-icon>
-          <span>Chat</span> 
+          <span>Messages</span> 
         </a>
       </li>
       
@@ -128,7 +128,7 @@ $user_id = get_current_user_id();
       <div class="d-flex flex-wrap align-items-center gap-3">
 
         <div class="dropdown">
-          <button class="has-indicator w-40-px h-40-px bg-neutral-200 rounded-circle d-flex justify-content-center align-items-center" type="button" data-bs-toggle="dropdown">
+          <button class="has-indicator w-40-px h-40-px bg-neutral-200  d-flex justify-content-center align-items-center" type="button" data-bs-toggle="dropdown">
             <iconify-icon icon="mage:email" class="text-primary-light text-xl"></iconify-icon>
           </button>
           <div class="dropdown-menu to-top dropdown-menu-lg p-0">
@@ -366,35 +366,35 @@ $user_id = get_current_user_id();
                 <div class="card-body p-16">
                     <div class="row gy-4">
                         <div class="col-xxl-3 col-xl-4 col-sm-6">
-                            <div class="px-20 py-16 shadow-none radius-8 h-100 left-line line-bg-primary position-relative overflow-hidden bg-white">
+                            <div class="px-20 py-16 shadow-none radius-8 h-100 position-relative overflow-hidden bg-white">
                                 <div class="d-flex flex-wrap align-items-center justify-content-between gap-1 mb-8">
                                     <div>
                                         <span class="mb-2 fw-medium text-secondary-light text-md">Total Investment</span>
                                         <h6 class="fw-semibold mb-1"><?php echo get_field('total_investment', 'user_' . $user_id);?></h6>
                                     </div>
-                                    <span class="w-44-px h-44-px radius-8 d-inline-flex justify-content-center align-items-center text-2xl mb-12 bg-primary-100 text-primary-600">
-                                        <i class="ri-shopping-cart-fill"></i>
+                                      <span class="w-44-px h-44-px radius-8 d-inline-flex justify-content-center align-items-center text-2xl mb-12">
+                                        <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/grafix.png">
                                     </span>
                                 </div>
                                 <p class="text-sm mb-0"><span class="bg-success-focus px-1 rounded-2 fw-medium text-success-main text-sm"><i class="ri-arrow-right-up-line"></i> 80%</span> From last month </p>
                             </div>
                         </div>
                         <div class="col-xxl-3 col-xl-4 col-sm-6">
-                            <div class="px-20 py-16 shadow-none radius-8 h-100 gradient-deep-2 left-line line-bg-lilac position-relative overflow-hidden">
+                            <div class="px-20 py-16 shadow-none radius-8 h-100  position-relative overflow-hidden bg-white">
                                 <div class="d-flex flex-wrap align-items-center justify-content-between gap-1 mb-8">
                                     <div>
                                         <span class="mb-2 fw-medium text-secondary-light text-md">Amount Earned</span>
                                         <h6 class="fw-semibold mb-1">£35,000</h6>
                                     </div>
-                                    <span class="w-44-px h-44-px radius-8 d-inline-flex justify-content-center align-items-center text-2xl mb-12 bg-lilac-200 text-lilac-600">
-                                        <i class="ri-handbag-fill"></i>
+                                      <span class="w-44-px h-44-px radius-8 d-inline-flex justify-content-center align-items-center text-2xl mb-12">
+                                        <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/grafix.png">
                                     </span>
                                 </div>
                                 <p class="text-sm mb-0"><span class="bg-success-focus px-1 rounded-2 fw-medium text-success-main text-sm"><i class="ri-arrow-right-up-line"></i> 95%</span> From last month </p>
                             </div>
                         </div>
                         <div class="col-xxl-3 col-xl-4 col-sm-6">
-                            <div class="px-20 py-16 shadow-none radius-8 h-100 gradient-deep-3 left-line line-bg-success position-relative overflow-hidden">
+                            <div class="px-20 py-16 shadow-none radius-8 h-100 position-relative overflow-hidden bg-white">
                                 <div class="d-flex flex-wrap align-items-center justify-content-between gap-1 mb-8">
                                     <div>
                                         <span class="mb-2 fw-medium text-secondary-light text-md">Days Invested</span>
@@ -416,24 +416,24 @@ $user_id = get_current_user_id();
                                         // Display the result
                                         echo $days_difference . " Days" ;
                                         ?></h6>
-                                        <p><?php echo get_field('start_date', 'user_' . $user_id);?></p>
                                     </div>
-                                    <span class="w-44-px h-44-px radius-8 d-inline-flex justify-content-center align-items-center text-2xl mb-12 bg-success-200 text-success-600">
-                                        <i class="ri-shopping-cart-fill"></i>
+                                    <span class="w-44-px h-44-px radius-8 d-inline-flex justify-content-center align-items-center text-2xl mb-12">
+                                        <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/grafix.png">
                                     </span>
                                 </div>
-                                <p class="text-sm mb-0"><span class="bg-danger-focus px-1 rounded-2 fw-medium text-danger-main text-sm"><i class="ri-arrow-right-down-line"></i> 30%</span> From last month </p>
+                                <p class="text-sm mb-0"><span class="px-1 rounded-2 fw-medium text-sm">Start Date:</span><?php echo get_field('start_date', 'user_' . $user_id);?>
+</p>
                             </div>
                         </div>
                         <div class="col-xxl-3 col-xl-4 col-sm-6">
-                            <div class="px-20 py-16 shadow-none radius-8 h-100 gradient-deep-4 left-line line-bg-warning position-relative overflow-hidden">
+                            <div class="px-20 py-16 shadow-none radius-8 h-100 position-relative overflow-hidden bg-white">
                                 <div class="d-flex flex-wrap align-items-center justify-content-between gap-1 mb-8">
                                     <div>
                                         <span class="mb-2 fw-medium text-secondary-light text-md">Total Expense</span>
                                         <h6 class="fw-semibold mb-1">$7,000</h6>
                                     </div>
-                                    <span class="w-44-px h-44-px radius-8 d-inline-flex justify-content-center align-items-center text-2xl mb-12 bg-warning-focus text-warning-600">
-                                        <i class="ri-shopping-cart-fill"></i>
+                                    <span class="w-44-px h-44-px radius-8 d-inline-flex justify-content-center align-items-center text-2xl mb-12">
+                                        <img src="http://localhost:8888/wp-content/themes/hello-elementor/account/assets/images/grafix.png">
                                     </span>
                                 </div>
                                 <p class="text-sm mb-0"><span class="bg-success-focus px-1 rounded-2 fw-medium text-success-main text-sm"><i class="ri-arrow-right-up-line"></i> 60%</span> From last month </p>
@@ -460,7 +460,7 @@ $user_id = get_current_user_id();
                 </div>
             </div>
         </div>
-        <div class="col-xxl-4 col-md-6">
+        <div class="col-xxl-4 col-md-12">
             <div class="card pb-4">
                 <div class="card-header border-bottom">
                     <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between">
@@ -491,8 +491,8 @@ $user_id = get_current_user_id();
                         <div class="d-flex p-20">
                             <a href="<?php the_permalink(); ?>" class="d-flex w-100 text-decoration-none text-inherit">
                                 <?php if ( has_post_thumbnail() ) : ?>
-                                    <div class="w-90-px h-full rounded-circle flex-shrink-0 me-12 overflow-hidden">
-                                        <?php the_post_thumbnail(); ?>
+                                    <div class="w-90-px h-full flex-shrink-0 me-12 overflow-hidden">
+                                      <img class="rounded-circle vh-8" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Post Thumbnail">
                                     </div>
                                 <?php endif; ?>
                                 <div>
@@ -520,7 +520,7 @@ $user_id = get_current_user_id();
   <footer class="d-footer">
   <div class="row align-items-center justify-content-between">
     <div class="col-auto">
-      <p class="mb-0">© 2024 WowDash. All Rights Reserved.</p>
+      <p class="mb-0">© 2024 LX Network. All Rights Reserved.</p>
     </div>
     <div class="col-auto">
       <p class="mb-0">Made by <span class="text-primary-600">wowtheme7</span></p>
@@ -603,6 +603,21 @@ $user_id = get_current_user_id();
     ?>
 
     ];
+
+  // Find the last non-zero value
+    let lastNonZero = 0;
+    for (let i = rawData.length - 1; i >= 0; i--) {
+        if (rawData[i] !== 0) {
+            lastNonZero = rawData[i];
+            break;
+        }
+    }
+
+    // Calculate profit
+    let profit = lastNonZero - <?php echo get_field('total_investment', 'user_' . $user_id);?> ;
+
+    // Output profit or use it in the chart
+    console.log("Profit:", profit);
 
     // Function to replace 0, null, or empty with the last valid number
     function processData(data) {
