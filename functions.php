@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'HELLO_ELEMENTOR_VERSION', '3.1.1' );
+define( 'HELLO_ELEMENTOR_VERSION', '3.2.1' );
 
 if ( ! isset( $content_width ) ) {
 	$content_width = 800; // Pixels.
@@ -60,16 +60,14 @@ if ( ! function_exists( 'hello_elementor_setup' ) ) {
 					'flex-width'  => true,
 				]
 			);
-
-			/*
-			 * Editor Style.
-			 */
-			add_editor_style( 'classic-editor.css' );
-
-			/*
-			 * Gutenberg wide images.
-			 */
 			add_theme_support( 'align-wide' );
+			add_theme_support( 'responsive-embeds' );
+
+			/*
+			 * Editor Styles
+			 */
+			add_theme_support( 'editor-styles' );
+			add_editor_style( 'editor-styles.css' );
 
 			/*
 			 * WooCommerce.
@@ -262,159 +260,4 @@ if ( ! function_exists( 'hello_elementor_body_open' ) ) {
 	function hello_elementor_body_open() {
 		wp_body_open();
 	}
-}
-
-function redirect_contributors_on_login($redirect_to, $request, $user) {
-    // Check if the user is a contributor
-    if (isset($user->roles) && is_array($user->roles)) {
-        if (in_array('contributor', $user->roles)) {
-            // Redirect to the /account page
-            return home_url('/account');
-        }
-    }
-    // Return the default redirect URL if the user is not a contributor
-    return $redirect_to;
-}
-add_filter('login_redirect', 'redirect_contributors_on_login', 10, 3);
-
-function restrict_account_page_access() {
-    // Check if the user is not logged in and is trying to access the /account/ page
-    if ( ! is_user_logged_in() && is_page('account') ) {
-        // Redirect to the login page
-        wp_redirect(wp_login_url(get_permalink()));
-        exit;
-    }
-}
-add_action('template_redirect', 'restrict_account_page_access');
-
-
-function add_custom_user_export_columns($columns) {
-    // Add the custom field to the columns
-    $columns['total_investment'] = 'Total Investment';
-    return $columns;
-}
-add_filter('export_user_column_headers', 'add_custom_user_export_columns');
-
-function add_custom_user_export_data($user, $fields) {
-    // Get the total_investment custom field value
-    $total_investment = get_user_meta($user->ID, 'total_investment', true);
-    
-    // Add the custom field value to the exported data
-    $fields['total_investment'] = $total_investment;
-    
-    return $fields;
-}
-add_filter('export_user_data', 'add_custom_user_export_data', 10, 2);
-
-function wpdocs_custom_excerpt_length( $length ) {
-	return 10;
-}
-add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
-
-// Add an admin menu for composing messages
-add_action('admin_menu', 'user_messages_menu');
-
-function user_messages_menu() {
-    add_users_page(
-        'Send Message',
-        'Send Message',
-        'manage_options',
-        'send-user-message',
-        'user_messages_send_message_page'
-    );
-}
-
-// Display the form for sending messages
-function user_messages_send_message_page() {
-    if (!current_user_can('manage_options')) {
-        return;
-    }
-
-    if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['user_message'])) {
-        global $wpdb;
-        $table_name = $wpdb->prefix . 'user_messages';
-        $user_id = get_current_user_id();
-        $message = sanitize_textarea_field($_POST['user_message']);
-
-        $wpdb->insert($table_name, [
-            'user_id' => $user_id,
-            'message' => $message
-        ]);
-
-        echo '<div class="notice notice-success"><p>Message sent successfully!</p></div>';
-    }
-
-    ?>
-    <h1>Send Message to All Users</h1>
-    <form method="POST">
-        <textarea name="user_message" rows="5" cols="50" required></textarea><br><br>
-        <input type="submit" value="Send Message" class="button button-primary">
-    </form>
-    <?php
-}
-
-// Add admin menu for All Messages view
-add_action('admin_menu', 'user_messages_menu_all_messages');
-
-function user_messages_menu_all_messages() {
-    add_users_page(
-        'All Messages',
-        'All Messages',
-        'manage_options',
-        'all-user-messages',
-        'user_messages_all_messages_page'
-    );
-}
-
-// Display all messages with delete option
-function user_messages_all_messages_page() {
-    if (!current_user_can('manage_options')) {
-        return;
-    }
-
-    global $wpdb;
-    $table_name = $wpdb->prefix . 'user_messages';
-
-    // Handle delete action
-    if (isset($_GET['delete_message'])) {
-        $message_id = intval($_GET['delete_message']);
-        $wpdb->delete($table_name, ['id' => $message_id]);
-        echo '<div class="notice notice-success"><p>Message deleted successfully!</p></div>';
-    }
-
-    $messages = $wpdb->get_results("SELECT * FROM $table_name ORDER BY created_at DESC");
-
-    ?>
-    <h1>All Messages</h1>
-    <table class="widefat fixed" cellspacing="0">
-        <thead>
-            <tr>
-                <th>Message</th>
-                <th>Sender</th>
-                <th>Date</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php if ($messages): ?>
-                <?php foreach ($messages as $message): ?>
-                    <tr>
-                        <td><?php echo esc_html($message->message); ?></td>
-                        <td><?php echo esc_html(get_the_author_meta('display_name', $message->user_id)); ?></td>
-                        <td><?php echo esc_html(date('F j, Y, g:i a', strtotime($message->created_at))); ?></td>
-                        <td>
-                            <a href="<?php echo admin_url('users.php?page=all-user-messages&delete_message=' . $message->id); ?>" 
-                               onclick="return confirm('Are you sure you want to delete this message?');" 
-                               class="button button-danger">Delete</a>
-                        </td>
-                    </tr>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <tr>
-                    <td colspan="4">No messages found.</td>
-                </tr>
-            <?php endif; ?>
-        </tbody>
-    </table>
-    <?php
 }

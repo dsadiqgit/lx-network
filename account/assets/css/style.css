@@ -14369,11 +14369,6 @@ td.fc-header-center {
   overflow-y: auto;
 }
 
-@media (min-width: 1200px) {
-  .chat-message-list {
-    max-height: 375px;
-  }
-}
 @media (min-width: 1400px) {
   .chat-message-list {
     max-height: 711px;
@@ -15444,4 +15439,42 @@ td.fc-header-center {
 
 .vh-8 {
   height: 8vh;
+}
+
+#msg-circle {
+  background: #ff3c48;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: 2px 0 0 30px;
+}
+
+
+.apexcharts-yaxis {
+    transform: translateX(30px);
+}
+
+.dashboard-main-body .rounded-circle {
+	width: 100%;
+    height: 90px !important;
+    object-fit: cover;
+}
+
+.col-12 input, .col-12 label, .col-12 .wpcf7-form-control-wrap {
+	width: 100%;
+}
+
+.col-12 .wpcf7-form-control {
+	border: 1px solid grey;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.wpcf7-submit {
+    background: #ff3c48;
+    padding: 10px;
+    border-radius: 9px;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
 }
